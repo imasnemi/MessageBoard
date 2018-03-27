@@ -1,0 +1,16 @@
+<div id="subscribe-form">
+  <form [formGroup]="subscriptionForm">
+    <div *ngIf="error?.length">{{ error }} </div>
+    <input formControlName="login" placeholder="login" required/>
+    <br/>
+    <input formControlName="password" placeholder="password" type="password" minLength="4" maxLength="10" required/>
+    <br/>
+    <input placeholder="password confirm" type="password" required/>
+    <br/>
+    <input formControlName="avatar" placeholder="avatar url" required/>
+    <br/>
+    <input formControlName="color" placeholder="color" required/>
+    <br/>
+    <button (click)="subscribe()">Subscribe</button>
+  </form>
+</div>

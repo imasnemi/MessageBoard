@@ -1,0 +1,24 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div id="header">
+    <div id="header-links">
+      <a routerLink="/login" routerLinkActive="active">Login</a>
+      <a routerLink="/messages" routerLinkActive="active">Messages</a>
+      <a routerLink="/subscribe" routerLinkActive="active">Subscribe</a>
+    </div>
+    <!-- <div id="header-app-name"> {{ appName }} </div> -->
+  </div>
+
+  <app-message-input *ngIf="usersService?.user"></app-message-input>
+
+  <div id="container">
+    <app-hashtag-area [hashtags]="hashtags"></app-hashtag-area>
+    <router-outlet></router-outlet>
+    <!-- <app-messages (hashtagFound)="setHashtags($event)"></app-messages> -->
+    <app-user></app-user>
+  </div>
+
+  <div id="footer">
+    {{ appName + ' - 2018' }}
+  </div>
+</div>

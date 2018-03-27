@@ -1,0 +1,14 @@
+<div id="user-area">
+  <div *ngIf="usersService.user; else notLogged">
+    <div id="user-area-header"
+    [style.background-color]="usersService.user.color">
+      {{ usersService.user?.login }}
+    </div>
+    <img id="user-area-avatar" [src]="usersService.user.avatar"/>
+      <br/>
+      <button (click)="usersService.logout()">Logout</button>
+  </div>
+  <ng-template #notLogged>
+    You are not logged
+  </ng-template>
+</div>

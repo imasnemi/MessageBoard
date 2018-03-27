@@ -1,0 +1,11 @@
+#subscribe-form {
+    padding: 5vh;
+    background-color: white;
+    border-radius: 1vh;
+
+}
+
+input {
+    margin: 1vh;
+    padding: 1vh;
+}

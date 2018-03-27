@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;    
+    color: #1D375A;
+    background-color: #e6ecf0;
+    font-family: 'Lato', sans-serif;
+}
+
+input[type="text"] {
+    margin: 1vh;
+    padding: 1vh;
+    border: 1px solid #8f8f8f;
+}
+
+input[type="password"] {
+    margin: 1vh;
+    padding: 1vh;
+    border: 1px solid #8f8f8f;
+}
+
+button {
+    border: none;
+    border-radius: 2vh;
+    background-color: #1D375A;
+    color: white;
+    padding: 1vh 2vh 1vh 2vh;
+    font-weight: bold;
+}

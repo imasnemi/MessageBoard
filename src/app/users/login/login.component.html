@@ -1,0 +1,7 @@
+<div id="login-form">
+  <div *ngIf="error?.length" id="login-form-error">{{ error }}</div>
+  <input [(ngModel)]="credentials.login" type="text" placeholder="login"/><br/>
+  <input [(ngModel)]="credentials.password" type="password" placeholder="password"/><br/>
+
+  <button (click)="login()">Login</button>  
+</div>

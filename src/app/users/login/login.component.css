@@ -1,0 +1,14 @@
+#login-form {
+    border-radius: 4vh;
+    background-color: white;
+    padding: 25vh 0 25vh 0;
+    width: 100vh;
+}
+
+#login-form-error {
+    color: white;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 1vh;
+    padding: 1vh;
+}

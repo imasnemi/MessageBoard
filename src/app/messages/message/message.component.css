@@ -1,0 +1,35 @@
+.message {
+    padding: 1vh;
+    width: 100vh;
+    margin: auto;
+    margin-top: 2vh;    
+    margin-bottom: 2vh;
+    border-radius: 1vh;
+    background-color: white;
+}
+
+.message-image {
+    width: 90vh;
+    margin: auto;
+}
+
+.message-author {
+    font-weight: bold;
+}
+
+.message-content {
+}
+
+.message-date {
+    color: rgb(184, 184, 184);
+}
+
+.alternate {
+    background-color: rgb(213, 224, 231);
+}
+
+.message-hide {
+    text-align: left;
+    font-size: 10px;
+    color: gray;
+}

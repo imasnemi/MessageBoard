@@ -1,0 +1,8 @@
+.shadowed {
+    box-shadow: 5px 10px #888;
+}
+
+button{
+    width: 100vh;
+    border-radius: 1vh;
+}

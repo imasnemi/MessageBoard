@@ -1,0 +1,30 @@
+.message {
+    padding: 1vh;
+    width: 100vh;
+    margin: auto;
+    margin-top: 2vh;    
+    margin-bottom: 2vh;
+    border-radius: 1vh;
+    background-color: white;
+}
+
+.message-image {
+    width: 90vh;
+    margin: auto;
+}
+
+.message-author {
+    font-weight: bold;
+}
+
+.message-content {
+}
+
+.message-date {
+    color: blue;
+}
+
+.alternate {
+    background-color: grey;
+    color: white;
+}

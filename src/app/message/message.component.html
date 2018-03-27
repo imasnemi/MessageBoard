@@ -1,0 +1,26 @@
+<div class="message" [ngClass]="{alternate: index % 2}" 
+[ngSwitch]="message.type">
+  <!-- Text Message -->
+  <div class="text-message" *ngSwitchCase="messageType.TEXT">
+    <span class="message-author">{{ message.author }}</span>
+    <i class="message-date">{{ message.date | date:'short' }}</i>   
+    <p class="message-content" [innerHTML]="message.content | hashtags"></p>
+  </div>
+  <!-- Image Message -->
+  <div class="image-message" *ngSwitchCase="messageType.IMAGE">
+      <span class="message-author">{{ message.author }}</span>
+      <i class="message-date">{{ message.date | date }}</i>
+      <img class="message-image" [attr.src]="message.url"/><br/>
+      <i [innerHTML]="message.content | hashtags"></i>
+  </div>
+  <!-- Video Message -->
+  <div class="video-message" *ngSwitchCase="messageType.VIDEO">
+      <span class="message-author">{{ message.author }}</span>
+      <i class="message-date">{{ message.date | date }}</i><br/>
+      <iframe width="560" height="315" [attr.src]="safeUrl"
+      frameborder="0" allow="autoplay; encrypted-media" 
+      allowfullscreen>
+    </iframe><br/>
+    <span [innerHTML]="message.content | hashtags"></span>
+  </div>
+</div>

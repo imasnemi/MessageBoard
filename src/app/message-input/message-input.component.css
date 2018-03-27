@@ -1,0 +1,27 @@
+#message-input {
+    margin: 1vh;
+    padding: 1vh;
+}
+
+.message-input-content {
+    height: 10vh;
+    width: 80vh;
+    margin: auto;
+    border-radius: 1vh;
+}
+
+input[type="text"] {
+    margin: 1vh;
+}
+
+.message-input-author {
+    border-radius: 1vh;
+}
+
+.message-input-url {
+    border-radius: 1vh;
+}
+
+button {
+
+}

@@ -1,0 +1,11 @@
+#user-area {
+    padding: 1vh;
+    margin: 1vh;
+    border-radius: 2vh;
+    background-color: white;
+}
+
+#user-area-avatar {
+    border-radius: 50%;
+    border: 3px solid grey;
+}

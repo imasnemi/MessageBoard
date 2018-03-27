@@ -1,0 +1,7 @@
+<div id="messages">
+    <button (click)="messagesService.loadMessages(); missedMessages = 0">
+        Reload ({{ missedMessages }} missed messages)
+    </button>
+   <app-message *ngFor="let message of messages.reverse(); let id = index" [message]="message" [index]="id">
+   </app-message>
+</div>

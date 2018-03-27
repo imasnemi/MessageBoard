@@ -1,0 +1,6 @@
+<div id="message-input">
+    <input [(ngModel)]="message.author" class="message-input-author" type="text" placeholder="author"/><br/>    
+    <input [(ngModel)]="message.content" class="message-input-content" type="text" placeholder="What's on your mind"/><br/>
+    <input [(ngModel)]="message.url" class="message-input-url" placeholder="https://your_content.com"/>
+    <button *ngIf="message.content.length" (click)="onSend()">Send</button>
+  </div>
